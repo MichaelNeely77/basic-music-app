@@ -1,28 +1,46 @@
 <template>
   <div id="app">
-
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <header>
+      <h1>
+        My Music Application
+      </h1>
+    </header>
+    <main>
+      <section class="player">
+        <h2 class="song-title">
+          Test
+        </h2>
+      </section>
+    </main>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
 
 export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
+  name: 'app'
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
+ * {
+   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  body {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    background-color: #212121;
+    color: #fff;
+  }
 </style>
